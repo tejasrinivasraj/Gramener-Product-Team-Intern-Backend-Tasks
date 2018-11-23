@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+   <body>
+   
+      <h2 style = "text-align: center;">Student Details Form</h2>
+		
+      {% for message in form.name.errors %}
+         <div>{{ message }}</div>
+      {% endfor %}
+      
+      
+      <form action = "http://localhost:5000" method = post>
+         <fieldset>
+            <legend>Student Details</legend>
+            {{ form.hidden_tag() }}
+            
+            <div style = font-size:20px; font-weight:bold; margin-left:150px;>
+               {{ form.name.label }}<br>
+               {{ form.name }}
+               <br>
+               
+               {{ form.Age.label }}<br>
+               {{ form.Age }}
+               <br>
+               
+               {{ form.Gender.label }} {{ form.Gender }}
+               
+               <br>
+               {{ form.submit }}
+            </div>
+            
+         </fieldset>
+      </form>
+      <br>
+      <center>
+         <a href = "/data">Click Here for Registered Students!</a>
+      </center>
+      
+   </body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+   <body>
+      <center>
+         <hr>
+         <h2>Student Details</h2>
+         <hr>
+         <br>
+         <table border ="1" cellpadding="12px">
+            <thead>
+               <td>Name</td>
+               <td>Age</td>
+               <td>Gender</td>
+            </thead>
+         
+            {% for row in rows %}
+               <tr>
+                  <td>{{row["name"]}}</td>
+                  <td>{{row["age"]}}</td>
+                  <td>{{ row["gender"]}}</td>
+               </tr>
+            {% endfor %}
+         </table>
+         <br>
+         <br>
+         <a href = "/">Go back to home page</a>
+         <h4>By</h4>
+         <h4>Teja Srinivas</h4>
+      </center>
+   </body>
+</html>
