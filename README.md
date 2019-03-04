@@ -1,4 +1,4 @@
-# Gramener-Product-Team-Intern-Backend-Tasks
+# python-flask-simple-data-storage-using-sqlite3
 Gramener Product Team Intern Backend Developer Task by Teja Srinivas
 
 # Task1
